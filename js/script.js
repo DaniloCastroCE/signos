@@ -78,6 +78,7 @@ const initData = () => {
     const idade = getIdade(dia, mes, ano)
     const txtIdade = (idade > 0) ? ` (${idade} anos)` : ""
     document.querySelector('#data-nasc').innerHTML = `Data de Nascimento${txtIdade}`
+    
 }
 
 const consultar = () => {
@@ -99,6 +100,8 @@ const consultar = () => {
             dataNasc.signo = el.nome
         }
     })
+
+    if(dataNasc.signo === "") dataNasc.signo = "Capricórnio"
 
     pessoa = dataNasc
 
