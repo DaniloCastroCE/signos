@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultar Signo</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <main class="centralizar">
+        <div class="box">
+            <table class="dataNasc centralizar ">
+                <tr>
+                    <td colspan="3">
+                        <h2 class="indice noto-sans-destaque" id="data-nasc">Data de Nascimento</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="dia">Dia</label>
+                        <select name="dia" id="dia"></select>
+                    </td>
+                    <td>
+                        <label for="mes">Mês</label>
+                        <select name="mes" id="mes"></select>
+                    </td>
+                    <td>
+                        <label for="ano">Ano</label>
+                        <select name="ano" id="ano"></select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <button class="btn lilita-one-regular" onclick="consultar()">consultar</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="painel" class="box display-none">
+            <div id="painel-titulo" class="centralizar boldonse-regular"></div>
+            <div id="painel-datas" class="centralizar boldonse-regular"></div>
+            <div id="painel-descricao" class="centralizar boldonse-regular "></div>
+        </div>
+
+    </main>
+    <script src="./js/Signos.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

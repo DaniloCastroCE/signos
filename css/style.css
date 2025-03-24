@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100vh;
+    background-color: #e0f7fa;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Lilita+One&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+
+.noto-sans-destaque {
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+.boldonse-regular {
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+.lilita-one-regular {
+    font-family: "Lilita One", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+.display-none {
+    display: none;
+}
+
+main {
+    height: 100%;
+    flex-direction: column;
+    gap: 20px;
+    padding: 5px;
+}
+
+.centralizar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    background-color: #b2ebf2;
+    min-width: 375px;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 4px 4px 20px black;
+    animation: in 2s forwards;
+}
+
+.dataNasc {
+    padding: 5px;
+}
+
+.dataNasc tr td {
+    padding: 5px 10px;
+}
+
+.dataNasc select {
+    padding: 5px 10px;
+}
+
+.dataNasc label,
+.dataNasc select,
+.dataNasc option {
+    font-size: 20px;
+    font-family: "Winky Sans", sans-serif;
+}
+
+.dataNasc select:focus {
+    border-color: #4d90fe; 
+    background-color: #a6c2ec;
+    outline: none; 
+  }
+
+.indice {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.btn {
+    padding: 10px 15px;
+    background-color: #45a049;
+    cursor: pointer;
+    letter-spacing: 3px;
+    border: none;
+    text-transform: uppercase;
+    margin: 15px auto 2px;
+    display: block;
+}
+
+.btn:active {
+    background-color: #2196F3;
+}
+
+#painel-titulo {
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+#painel-datas {
+    font-style: italic;
+}
+
+#painel-descricao {
+    padding: 10px 20px;
+    text-indent: 30px;
+    font-size: 18px;
+}
+
+@keyframes in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
